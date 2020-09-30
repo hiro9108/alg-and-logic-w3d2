@@ -1,14 +1,13 @@
 
-
 const searchArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 15, 16, 19, 24, 26, 27];
 
 const binarySearchForRecursive = (arr, target) => {
 
-    let mid = Math.floor(arr.length / 2);
-    
     if (arr.length === 1) {
         return 0;
     }
+
+    let mid = Math.floor(arr.length / 2);
 
     let firstArr = arr.slice(0, mid);
     let secondArr = arr.slice(mid, arr.lenght);
